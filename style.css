@@ -1,0 +1,4 @@
+
+body { font-family: 'Segoe UI', sans-serif; background: #fafaf7; }
+.category-btn { border:2px solid #111; border-radius:12px; padding:12px; font-weight:800; background:white; }
+.product-card { border:1px solid #ddd; border-radius:14px; background:white; padding:16px; }

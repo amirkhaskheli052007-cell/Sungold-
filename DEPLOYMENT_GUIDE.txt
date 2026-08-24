@@ -1,0 +1,35 @@
+
+SUNGOLD ORGANIC - LIVE DEPLOYMENT GUIDE
+
+LOCAL RUN:
+pip install -r requirements.txt
+streamlit run app.py
+Open http://localhost:8501
+
+ADMIN LOGIN: Dildar0912fdh (env se change karo)
+
+LIVE WEBSITE BANANE KE LIYE:
+1. GitHub par repo banao, ye 4 files push karo: app.py, requirements.txt, .env.example, README.md
+2. Streamlit Cloud (share.streamlit.io) par jao -> New App -> GitHub repo select -> Deploy
+3. Secrets me SUNGOLD_ADMIN_PASSWORD add karo
+4. Deploy ke baad aapko public link milega: https://your-app.streamlit.app
+
+NOTE:
+- SQLite Streamlit Cloud par reset ho sakta hai. Production ke liye Postgres use karo.
+- Code se automatic live link nahi banta. Deploy karna zaroori hai.
+- Aapka sungold_orders.db safe hai - ye backup se replace nahi hota.
+
+FEATURES DONE:
+- Customer Register/Login with bcrypt hashing
+- 4 Categories clickable: Organic Chicken, Eggs, Vegetables, Mutton
+- Product search working
+- Decimal quantities: 3.4, 8.03 etc
+- Cart auto-save in DB
+- Checkout auto-fill
+- Order history, reorder, invoice A4 with S/N Product Qty UnitPrice Total headings bold
+- Admin Dashboard with From-To date, status filters
+- Dynamic Ledger: order debit, payment credit, adjustment - auto sync on delete/edit
+- Payments Add/Edit/Delete with confirmation
+- Blank Payment Sheets 5/10/15 customers A4 professional
+- Reports: Product-wise, Category-wise, Customer-wise, Chicken/Mutton/Veg/Eggs sales with CSV + PDF
+- WhatsApp + Telegram optional
