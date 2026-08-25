@@ -1,1 +1,7 @@
 
+streamlit
+reportlab
+requests
+bcrypt
+pandas
+pillow
